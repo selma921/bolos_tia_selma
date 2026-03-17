@@ -9,55 +9,46 @@
         :root { --laranja: #E67E22; --marrom: #5D4037; --creme: #FFFDF5; --bege: #fdf2e9; --whats: #25D366; }
         * { box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: 'Poppins', sans-serif; margin: 0; background-color: var(--creme); color: var(--marrom); }
-
         header { background: #fff9f2; text-align: center; padding: 20px; border-bottom: 5px solid var(--laranja); }
-        header img { width: 100%; max-width: 800px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-
+        header img { width: 100%; max-width: 800px; border-radius: 15px; }
         nav { background: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        nav a { text-decoration: none; color: var(--marrom); margin: 0 15px; font-weight: 600; transition: 0.3s; }
-        nav a:hover { color: var(--laranja); }
-
+        nav a { text-decoration: none; color: var(--marrom); margin: 0 15px; font-weight: 600; }
         .container { padding: 40px 5%; max-width: 1200px; margin: auto; }
         .section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; }
-
         .grid-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card-produto { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; border: 1px solid #eee; }
-        .card-produto:hover { transform: translateY(-5px); border-color: var(--laranja); }
+        .card-produto { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; }
         .card-produto img { width: 100%; height: 320px; object-fit: cover; }
         .info { padding: 20px; }
         .preco { font-size: 1.6rem; color: var(--laranja); font-weight: 700; margin-top: 10px; }
-
         .post { background: var(--bege); padding: 25px; border-radius: 20px; border-left: 6px solid var(--laranja); margin-top: 20px; }
-        
-        .mapa-area { border-radius: 25px; overflow: hidden; height: 400px; margin-top: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-
-        .whats-fixo { position: fixed; bottom: 30px; right: 30px; background: var(--whats); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 2000; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: 0.3s; }
-        .whats-fixo:hover { transform: scale(1.05); background: #1eb956; }
-
+        .whats-fixo { position: fixed; bottom: 30px; right: 30px; background: var(--whats); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 2000; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         footer { background: var(--marrom); color: white; text-align: center; padding: 50px 20px; margin-top: 80px; }
     </style>
 </head>
 <body>
 
-    <header id="inicio">
-        <img src="logo.jpg" alt="Logo Bolos da Tia Selma">
-    </header>
+    <header><img src="logo.jpg" alt="Logo Bolos da Tia Selma"></header>
 
     <nav>
-        <a href="#sabores">Nossos Bolos</a>
+        <a href="#sabores">Nossos Produtos</a>
         <a href="#cardapio">Cardápio</a>
         <a href="#blog">Cantinho da Tia</a>
-        <a href="#onde">Onde Estamos</a>
     </nav>
 
     <div class="container">
         <h2 id="sabores" class="section-title">Destaques da Tia Selma</h2>
         <div class="grid-produtos">
+            
             <div class="card-produto">
                 <img src="pudim de tapioca.jpeg" alt="Pudim de Tapioca">
                 <div class="info"><h3>Pudim de Tapioca</h3><div class="preco">R$ 80,00</div></div>
             </div>
-            
+
+            <div class="card-produto">
+                <img src="rosca caseira.jpeg" alt="Rosca Caseira">
+                <div class="info"><h3>Rosca Caseira</h3><div class="preco">R$ 40,00</div></div>
+            </div>
+
             <div class="card-produto">
                 <img src="bolo de chocolate.jpg" alt="Bolo de Chocolate">
                 <div class="info"><h3>Bolo de Chocolate</h3><div class="preco">R$ 60,00</div></div>
@@ -85,36 +76,20 @@
         </div>
 
         <h2 id="cardapio" class="section-title" style="margin-top: 80px;">Cardápio Completo</h2>
-        <div style="text-align: center;">
-            <img src="cardapio.jpg" style="max-width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);" alt="Cardápio Oficial">
-        </div>
+        <div style="text-align: center;"><img src="cardapio.jpg" style="max-width: 100%; border-radius: 15px;"></div>
 
         <h2 id="blog" class="section-title" style="margin-top: 80px;">Cantinho da Tia Selma</h2>
         <div class="post">
             <h3>Tradição de Icoaraci</h3>
-            <p>Nosso pudim de tapioca é feito com a verdadeira tapioca granulada regional. É a sobremesa perfeita para o seu domingo em família! Feito com carinho na Ponta Grossa.</p>
-        </div>
-        <div class="post">
-            <h3>Dica da Tia</h3>
-            <p>Para manter seu bolo sempre fofinho, evite correntes de ar logo após tirar do forno. Cubra com um pano de prato limpo e deixe esfriar naturalmente.</p>
-        </div>
-
-        <h2 id="onde" class="section-title" style="margin-top: 80px;">Venha nos visitar</h2>
-        <p style="text-align: center; font-size: 1.1rem;">📍 Bairro Ponta Grossa, Icoaraci - Belém/PA</p>
-        <div class="mapa-area">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.14440026218!2d-48.4842187!3d-1.2952814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a4623788229d6d%3A0xc3f7f0a82b0b188c!2sIcoaraci%2C%20Bel%C3%A9m%20-%20PA!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p>Nossos produtos são feitos com ingredientes selecionados e o carinho que sua família merece.</p>
         </div>
     </div>
 
-    <a href="https://wa.me/5591989440356?text=Oi+Tia+Selma!+Vi+o+site+e+fiquei+com+vontade+de+comer+seus+bolos." class="whats-fixo" target="_blank">
-        Pedir pelo WhatsApp 🟢
-    </a>
+    <a href="https://wa.me/5591989440356" class="whats-fixo" target="_blank">Pedir pelo WhatsApp 🟢</a>
 
     <footer>
-        <h2 style="font-family: 'Playfair Display', serif;">Bolos da Tia Selma</h2>
-        <p>Sabor caseiro que conquista Icoaraci desde sempre.</p>
+        <p>📍 Bairro Ponta Grossa, Icoaraci - Belém/PA</p>
         <p>📞 (91) 98944-0356</p>
-        <div style="margin-top: 30px; opacity: 0.5; font-size: 0.8rem;">© 2026 - Todos os direitos reservados.</div>
     </footer>
 
 </body>
