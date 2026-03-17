@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da Tia Selma - Icoaraci</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --laranja: #E67E22; --marrom: #5D4037; --creme: #FFFDF5; --whats: #25D366; }
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: var(--creme); color: var(--marrom); }
+        
+        /* Cabeçalho */
+        header { background: #fff9f2; text-align: center; padding: 20px; border-bottom: 4px solid var(--laranja); }
+        header img { width: 100%; max-width: 900px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        /* Menu */
+        nav { background: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        nav a { text-decoration: none; color: var(--marrom); margin: 0 15px; font-weight: 600; font-size: 0.9rem; }
+        nav a:hover { color: var(--laranja); }
+
+        .container { padding: 40px 5%; max-width: 1200px; margin: auto; }
+        .section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; }
+
+        /* Vitrine de Bolos */
+        .grid-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card-produto { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .card-produto:hover { transform: translateY(-5px); }
+        .card-produto img { width: 100%; height: 320px; object-fit: cover; }
+        .info { padding: 20px; }
+        .preco { font-size: 1.6rem; color: var(--laranja); font-weight: 700; margin-top: 10px; }
+
+        /* Blog / Dicas */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .post { background: #fdf2e9; padding: 25px; border-radius: 20px; border-left: 6px solid var(--laranja); }
+        .post h3 { color: var(--laranja); margin-top: 0; }
+
+        /* Botão WhatsApp */
+        .btn-whats { position: fixed; bottom: 30px; right: 30px; background: var(--whats); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 10px 20px rgba(37,211,102,0.3); z-index: 2000; }
+
+        footer { background: var(--marrom); color: white; text-align: center; padding: 40px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header><img src="logo.jpg" alt="Bolos da Tia Selma"></header>
+
+    <nav>
+        <a href="#sabores">Nossos Bolos</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#blog">Cantinho da Tia</a>
+        <a href="#local">Onde Estamos</a>
+    </nav>
+
+    <div class="container">
+        <h2 id="sabores" class="section-title">Sucessos da Semana</h2>
+        <div class="grid-produtos">
+            <div class="card-produto">
+                <img src="bolo de cenoura com chocolate.png" alt="Bolo de Cenoura">
+                <div class="info"><h3>Cenoura com Chocolate</h3><div class="preco">R$ 80,00</div></div>
+            </div>
+            <div class="card-produto">
+                <img src="bolo pudim.jpg" alt="Bolo Pudim">
+                <div class="info"><h3>Bolo Pudim Cremoso</h3><div class="preco">R$ 80,00</div></div>
+            </div>
+            <div class="card-produto">
+                <img src="bolo de milho.jpg" alt="Bolo de Milho">
+                <div class="info"><h3>Milho Regional</h3><div class="preco">R$ 80,00</div></div>
+            </div>
+            <div class="card-produto">
+                <img src="bolo salgado.jpg" alt="Bolo Salgado">
+                <div class="info"><h3>Bolo Salgado Especial</h3><div class="preco">R$ 80,00</div></div>
+            </div>
+        </div>
+
+        <h2 id="cardapio" class="section-title" style="margin-top: 80px;">Cardápio Completo</h2>
+        <div style="text-align: center;"><img src="cardapio.jpg" style="max-width: 100%; border-radius: 15px;" alt="Cardápio"></div>
+
+        <h2 id="blog" class="section-title" style="margin-top: 80px;">Cantinho da Tia Selma</h2>
+        <div class="blog-grid">
+            <div class="post">
+                <h3>Como manter seu bolo fofinho?</h3>
+                <p>O segredo para não ressecar é guardar em local fechado e longe do vento direto de Icoaraci!</p>
+            </div>
+            <div class="post">
+                <h3>Calda de Café Regional</h3>
+                <p>Uma receita simples que combina perfeitamente com nosso bolo de milho quentinho.</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5591989440356?text=Oi+Tia+Selma!+Quero+fazer+um+pedido." class="btn-whats" target="_blank">Encomendar pelo WhatsApp 🟢</a>
+
+    <footer id="local">
+        <h2>Bolos da Tia Selma</h2>
+        <p>📍 Bairro Ponta Grossa, Icoaraci - Belém/PA</p>
+        <p>📞 (91) 98944-0356</p>
+    </footer>
+
+</body>
+</html>
