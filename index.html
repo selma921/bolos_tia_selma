@@ -6,7 +6,7 @@
     <title>Bolos da Tia Selma - Icoaraci</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        :root { --laranja: #E67E22; --marrom: #5D4037; --creme: #FFFDF5; --bege: #fdf2e9; --whats: #25D366; }
+        :root { --laranja: #E67E22; --marrom: #5D4037; --creme: #FFFDF5; --whats: #25D366; --bege: #fdf2e9; }
         * { box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: 'Poppins', sans-serif; margin: 0; background-color: var(--creme); color: var(--marrom); }
 
@@ -20,10 +20,11 @@
         .section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; }
 
         .grid-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card-produto { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; }
-        .card-produto img { width: 100%; height: 300px; object-fit: cover; }
+        .card-produto { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .card-produto:hover { transform: translateY(-5px); }
+        .card-produto img { width: 100%; height: 320px; object-fit: cover; }
         .info { padding: 20px; }
-        .preco { font-size: 1.5rem; color: var(--laranja); font-weight: 700; }
+        .preco { font-size: 1.6rem; color: var(--laranja); font-weight: 700; margin-top: 10px; }
 
         .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
         .post { background: var(--bege); padding: 25px; border-radius: 20px; border-left: 6px solid var(--laranja); }
@@ -40,7 +41,7 @@
     <header><img src="logo.jpg" alt="Logo Bolos da Tia Selma"></header>
 
     <nav>
-        <a href="#sabores">Bolos</a>
+        <a href="#sabores">Bolos & Sobremesas</a>
         <a href="#cardapio">Preços</a>
         <a href="#blog">Cantinho da Tia</a>
         <a href="#onde">Onde Estamos</a>
@@ -50,12 +51,16 @@
         <h2 id="sabores" class="section-title">Nossas Delícias</h2>
         <div class="grid-produtos">
             <div class="card-produto">
-                <img src="bolo de chocolate.jpg" alt="Bolo de Chocolate">
-                <div class="info"><h3>Bolo de Chocolate</h3><div class="preco">R$ 60,00</div></div>
+                <img src="pudim de tapioca.jpg" alt="Pudim de Tapioca">
+                <div class="info"><h3>Pudim de Tapioca</h3><div class="preco">R$ 60,00</div></div>
             </div>
             <div class="card-produto">
                 <img src="bolo de cenoura com chocolate.png" alt="Bolo de Cenoura">
                 <div class="info"><h3>Cenoura com Chocolate</h3><div class="preco">R$ 80,00</div></div>
+            </div>
+            <div class="card-produto">
+                <img src="bolo de chocolate.jpg" alt="Bolo de Chocolate">
+                <div class="info"><h3>Bolo de Chocolate</h3><div class="preco">R$ 60,00</div></div>
             </div>
             <div class="card-produto">
                 <img src="bolo pudim.jpg" alt="Bolo Pudim">
@@ -81,8 +86,8 @@
                 <p>O segredo é não deixar o bolo pegar vento logo após sair do forno. Cubra com um pano limpo para manter a umidade!</p>
             </div>
             <div class="post">
-                <h3>Interatividade com Clientes</h3>
-                <p>Mande a foto do seu bolo no WhatsApp e aparecerá aqui no nosso cantinho! Adoramos ver sua família reunida.</p>
+                <h3>Tapioca de Icoaraci</h3>
+                <p>Nosso segredo para o pudim cremoso é usar tapioca granulada de primeira, comprada fresquinha na nossa Ponta Grossa. Tradição e sabor!</p>
             </div>
         </div>
 
@@ -93,7 +98,7 @@
         </div>
     </div>
 
-    <a href="https://wa.me/5591989440356?text=Oi+Tia+Selma!+Vi+o+site+e+quero+um+bolo." class="whats-fixo" target="_blank">Pedir pelo WhatsApp 🟢</a>
+    <a href="https://wa.me/5591989440356?text=Oi+Tia+Selma!+Vi+o+site+e+quero+um+pudim+de+tapioca." class="whats-fixo" target="_blank">Pedir pelo WhatsApp 🟢</a>
 
     <footer>
         <h2>Bolos da Tia Selma</h2>
